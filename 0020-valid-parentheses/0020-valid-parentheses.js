@@ -34,6 +34,7 @@ var isValid = function(s) {
         
     }
     
+    //열린 괄호가 연속이 될 경우 false~~~ 
     return arr.length == 0 ? true : false
    
 };
