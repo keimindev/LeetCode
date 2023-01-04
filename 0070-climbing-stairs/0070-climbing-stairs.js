@@ -20,6 +20,8 @@ var climbStairs = function(n) {
    //fib sequende run time limit exceeded
     
 
+  //Iterative solution with memoization
+  //반복문으로 해결- 
   if (n <= 1) return 1;
   for (let i = 2; i <= n; i++) {
     cache[i] = cache[i - 1] + cache[i - 2];
