@@ -5,7 +5,6 @@
 var isPalindrome = function(s) {
   if(s == ' ') return true
   let temp = s.replace(/[^a-zA-Z0-9ㄱ-힣]/g, '').toLowerCase()
- //  let lowerS = temp.split(' ').join(',')
   let len = Math.floor([...temp].length / 2)
   let first = [...temp].splice(0,len)
   let second = [...temp].reverse().splice(0,len)
