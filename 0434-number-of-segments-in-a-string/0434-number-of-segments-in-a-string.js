@@ -7,7 +7,6 @@ var countSegments = function(s) {
     let arr = []
     for(let temp of arrS){
         if(temp.length > 0){
-            console.log(temp)
             arr.push(temp)
         }
     }
