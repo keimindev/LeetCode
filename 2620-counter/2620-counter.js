@@ -3,7 +3,7 @@
  * @return {Function} counter
  */
 var createCounter = function(n) {
-    let numn = n;
+    let num = n;
     return function() {
        return n++
     };
