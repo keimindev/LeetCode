@@ -20,8 +20,10 @@ var diagonalSum = function(mat) {
        }
     
          
+        // row를 한번 초기화시켜줘야함.. 
         startRow = 0
         for(let i = endCol; i>=startCol; i--){
+            // 중간에 겹쳐지는 row와 column값을 제거하기 위해서 
             if(endCol != startRow && endRow != startCol){
                 console.log(endCol, endRow,startRow,)
                 sum.push(mat[i][startRow])
