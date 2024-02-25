@@ -21,4 +21,16 @@ var numberGame = function(nums) {
     }
     
     return result
+    
+    
+    
+//     const res = []
+//     const numSrt =  nums.sort(function(a,b){return b-a})
+
+//     for(let i=0;i<nums.length;i+=2){
+//         res.unshift(nums[i+1])
+//         res.unshift(nums[i])
+//     }
+
+//     return res
 };
