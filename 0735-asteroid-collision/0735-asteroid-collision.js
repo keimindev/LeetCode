@@ -3,10 +3,6 @@
  * @return {number[]}
  */
 var asteroidCollision = function(asteroids) {
-    // 양수와 양수는 괜찮, 
-    // 양수와 음수가 만나서 더했을 대 음수가 크면 양수랑 음수 둘 다 없어짐
-    // 양수와 음수가 만났을 때 양수가 더 크면 음수가 없어짐
-
   const result = [];
     
   for (let i = 0; i < asteroids.length; i++) {
