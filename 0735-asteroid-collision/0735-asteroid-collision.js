@@ -9,7 +9,7 @@ var asteroidCollision = function(asteroids) {
     let last = result[result.length - 1];
     let current = asteroids[i];
 
-    if (!result.length | (last < 0) | (current > 0)) {
+    if (!result.length || (last < 0) || (current > 0)) {
       result.push(current);
     } else if (-current == last) {
       result.pop();
