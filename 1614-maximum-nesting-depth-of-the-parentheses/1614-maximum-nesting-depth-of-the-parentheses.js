@@ -15,12 +15,10 @@ var maxDepth = function(s) {
              max = count
          }
      }else if(s[i] == ')'){
+         // 괄호 열린수만큼 닫히는 수도 빼야함
          --count
-        
      }
-
  }
-    
    return max
     
 };
