@@ -3,13 +3,21 @@
  * @return {Function}
  */
 var compose = function(functions) {
-    let result;
-	return function(x) {
-         if(functions.length===0)return x
-        for(let i = functions.length-1;i>=0;i--){
-            x =functions[i](x)
+    if(!functions.length){
+        return function(x){
+            return x;
         }
-        return x
+    }
+    return function(x) {
+        let val = x;
+
+        for(let i=functions.length -1; i>=0; i--){
+            val = functions[i](val);
+
+        }
+
+        return val
+        
     }
 };
 
