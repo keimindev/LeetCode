@@ -3,14 +3,15 @@
  * @return {Function}
  */
 var once = function(fn) {
-    let flag = true;
+    let called = false;
     let result;
+
     return function(...args){
-        if(flag) {
-            result = fn(...args);
-            flag = false;
-            return result;
-        } else return undefined;
+        if(!called){
+            result = fn(...args)
+            called = true;
+            return result
+        }
     }
 };
 
